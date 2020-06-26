@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display';
+}
+
+body {
+  background: url('https://source.unsplash.com/weekly?water') center / cover;
+}
