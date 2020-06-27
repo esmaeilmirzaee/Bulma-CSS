@@ -15,205 +15,118 @@
     <!-- <link rel="stylesheet" href="./css/debug.css" /> -->
     <title>Bulma Project #01</title>
     <style>
-      .center {
+      .is-paddingless-horizontal {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+      }
+      .grid * {
+        grid-column: md;
+      }
+      .grid-xl {
+        grid-column: xl;
+      }
+      .centre {
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
   <body>
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <figure class="image center">
-            <img src="./img/bulma-logo.png" style="max-width: 160px;" />
+    <section class="section is-paddingless-horizontal">
+      <div class="container grid">
+        <nav class="breadcrumb grid-xl">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li class="is-active">
+              <a href="">How to build a beautiful blog?</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section is-paddingless-horizontal">
+      <div class="container grid">
+        <article class="media centre">
+          <figure class="media-left">
+            <figure class="image is-64x64">
+              <img src="./img/me0.jpg" alt="" style="border-radius: 50%;" />
+            </figure>
           </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>
+                  Esmaeil MIRZAEE
+                </strong>
+                <a>@admin</a><br />
+                <span class="has-text-gray"
+                  >Self-taught, inspired to learn
+                  <time datetime="06-27-2020">June 27</time> . 20 min to read
+                </span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <div class="section is-paddingless-horizontal">
+          <h2 class="title is-2">How to build a beautiful blog</h2>
+          <h2 class="subtitle is-3 has-text-gray-light">
+            Learn from first-principles
+          </h2>
         </div>
-      </div>
-    </section>
 
-    <section class="section has-background-light">
-      <div class="container">
-        <div class="columns">
+        <figure
+          class="columns is-mobile is-variable is-0 is-marginless grid-xl"
+        >
           <div class="column">
-            <article class="media notification is-primary">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  <i class="fab fa-2x fa-css3-alt"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">Bulma?</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur, sit quaerat vero et vel quae quidem, ea id
-                    aliquam, totam assumenda earum numquam tenetur culpa
-                    obcaecati eligendi fugiat iste fugit.
-                  </p>
-                </div>
-              </div>
-            </article>
+            <div class="image card">
+              <a><img src="./img/blog-1.png" alt="" /></a>
+            </div>
           </div>
           <div class="column">
-            <article class="media notification is-info">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  <i class="fas fa-2x fa-align-justify"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...flexbox?</h1>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nam dicta ipsum autem ad quod eos a minima provident
-                    nostrum, error ratione eius animi voluptas odit commodi
-                    labore? Impedit, laudantium recusandae.
-                  </p>
-                </div>
-              </div>
-            </article>
+            <div class="image card">
+              <a><img src="./img/blog-2.png" alt="" /></a>
+            </div>
           </div>
           <div class="column">
-            <article class="media notification is-warning">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  <i class="fas fa-2x fa-shield-alt"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...classes?</h1>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Natus vitae nesciunt aliquam officiis nemo! In voluptate, ad
-                    excepturi adipisci tempora sapiente accusantium sunt quis
-                    amet, deleniti consequatur, laborum cumque illo.
-                  </p>
-                </div>
-              </div>
-            </article>
+            <div class="image card">
+              <a><img src="./img/blog-3.png" alt="" /></a>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </figure>
+        <figcaption class="level">
+          <small class="level-item has-text-gray">
+            The blog we'll build. Click to continue on Scrimba.
+          </small>
+        </figcaption>
 
-    <section class="section">
-      <div class="container">
-        <div class="columns is-multiline">
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon">
-                  <i class="fas fa-lg fa-columns has-text-warning"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">Columns?</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur, sit quaerat vero et vel quae quidem.
-                  </p>
-                </div>
-              </div>
-            </article>
+        <div class="content">
+          <div class="content is-small notification">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+            tempore soluta ex, vel, natus impedit ducimus recusandae esse
+            expedita animi fugit facilis corrupti officiis quae, sunt incidunt
+            commodi modi qui.
           </div>
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-info">
-                  <i class="fab fa-lg fa-wpforms"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...Form</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nam dicta ipsum autem ad quod eos a minima provident.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-danger">
-                  <i class="fas fa-lg fa-cubes"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...classes?</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Natus vitae nesciunt aliquam officiis nemo!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-gray">
-                  <i class="fas fa-lg fa-cogs"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...classes?</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Natus vitae nesciunt aliquam officiis nemo!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-primary">
-                  <i class="fas fa-lg fa-warehouse"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">Layout</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Natus vitae nesciunt aliquam
-                    <strong>officiis</strong> nemo!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-danger">
-                  <i class="fas fa-lg fa-cube"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">Elements</h1>
-                  <p class="subtitle is-size-5">
-                    In voluptate, ad excepturi adipisci tempora sapiente
-                    accusantium sunt quis amet, deleniti consequatur, laborum
-                    cumque illo.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
+          <p>
+            If you’re like me, you’re interested in the web and its overwhelming
+            reach, but you’re also inundated with the mess of information that
+            is learning HTML and CSS. The thing is, these languages are unlike
+            other domains, like Word Processors and Programming Languages.
+            <strong>The web is another world</strong>, and it’s not the
+            prettiest thing around.
+          </p>
+          <p>
+            Having learned me some web, I’m here to give a gentle push of
+            encouragement, because, <strong>with a little guidance</strong>,
+            these domains can be a lot easier than you imagine. Continue
+            reading, and we’ll build a beautiful blog from scratch. We’ll also
+            learn some CSS Grid, Flexbox, and Responsive Design.
+          </p>
         </div>
       </div>
     </section>
