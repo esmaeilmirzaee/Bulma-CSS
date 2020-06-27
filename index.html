@@ -13,209 +13,122 @@
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <!-- <link rel="stylesheet" href="./css/debug.css" /> -->
+    <link rel="stylesheet" href="./css/helpers.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
     <title>Bulma Project #01</title>
     <style>
-      .center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .hero {
+        background: black url(./img/hero-1.jpg) center/cover;
+      }
+      @media (max-width: 1024px) {
+        .hero {
+          background: black url(./img/hero-2.jpg) center/cover;
+        }
+      }
+      @media (max-width: 628px) {
+        .hero {
+          background: black url(./img/hero-3.jpg) center/cover;
+        }
+      }
+      .logo {
+        width: 6.25rem;
+        height: 1.5rem;
       }
     </style>
   </head>
   <body>
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <figure class="image center">
-            <img src="./img/bulma-logo.png" style="max-width: 160px;" />
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section has-background-light">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <article class="media notification is-primary">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  <i class="fab fa-2x fa-css3-alt"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">Bulma?</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur, sit quaerat vero et vel quae quidem, ea id
-                    aliquam, totam assumenda earum numquam tenetur culpa
-                    obcaecati eligendi fugiat iste fugit.
-                  </p>
-                </div>
-              </div>
-            </article>
+    <section class="hero is-fullheight">
+      <nav class="hero-head">
+        <div
+          class="columns is-mobile is-marginless heading has-text-weight-bold"
+        >
+          <div class="column left">
+            <figure class="navbar-item image">
+              <img
+                src="./img/tesla.svg"
+                alt=""
+                style="width: 6.25rem; height: 1rem;"
+              />
+            </figure>
           </div>
-          <div class="column">
-            <article class="media notification is-info">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  <i class="fas fa-2x fa-align-justify"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...flexbox?</h1>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nam dicta ipsum autem ad quod eos a minima provident
-                    nostrum, error ratione eius animi voluptas odit commodi
-                    labore? Impedit, laudantium recusandae.
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div class="column center desktop">
+            <p class="navbar-item has-text-black">Model S</p>
+            <p class="navbar-item has-text-black">Model X</p>
+            <p class="navbar-item has-text-black">Model 3</p>
+            <p class="navbar-item has-text-white">ROADSTER</p>
+            <p class="navbar-item has-text-black">ENERGY</p>
           </div>
-          <div class="column">
-            <article class="media notification is-warning">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  <i class="fas fa-2x fa-shield-alt"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...classes?</h1>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Natus vitae nesciunt aliquam officiis nemo! In voluptate, ad
-                    excepturi adipisci tempora sapiente accusantium sunt quis
-                    amet, deleniti consequatur, laborum cumque illo.
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div class="column right">
+            <p class="navbar-item desktop">SHOP</p>
+            <p class="navbar-item desktop">SIGN IN</p>
+            <figure class="navbar-item image has-text-black center">
+              <i class="fas fa-bars" style="width: 1rem; height: 1rem;"></i>
+            </figure>
           </div>
         </div>
-      </div>
-    </section>
+      </nav>
+      <header class="hero-body">
+        <div
+          class="is-overlay has-text-centered single-spaced"
+          style="top: 82px;"
+        >
+          <h1 class="subtitle is-4 has-text-weight-light has-text-black">
+            TESLA
+          </h1>
+          <h2 class="title is-1 has-text-black">Roadster</h2>
+        </div>
+      </header>
 
-    <section class="section">
-      <div class="container">
-        <div class="columns is-multiline">
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon">
-                  <i class="fas fa-lg fa-columns has-text-warning"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">Columns?</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur, sit quaerat vero et vel quae quidem.
-                  </p>
-                </div>
-              </div>
-            </article>
+      <main class="hero-foot center" style="padding: 2rem;">
+        <div id="grid" style="width: 768px;">
+          <div id="a" class="center-column">
+            <p class="has-text-centered has-text-white">
+              The quickest car in the world, with record-setting<br />
+              acceleration, range and performance.
+            </p>
           </div>
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-info">
-                  <i class="fab fa-lg fa-wpforms"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...Form</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nam dicta ipsum autem ad quod eos a minima provident.
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div id="b" class="center-column">
+            <p class="title has-text-white">
+              <i
+                class="fas fa-tachometer-alt has-text-gray-light"
+                style="width: 2.5rem; height: 2.5rem;"
+              ></i
+              >1.9 <span class="is-size-5">s</span>
+            </p>
+            <p class="subtitle has-text-white is-7">0-60 mph</p>
           </div>
-
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-danger">
-                  <i class="fas fa-lg fa-cubes"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...classes?</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Natus vitae nesciunt aliquam officiis nemo!
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div
+            id="c"
+            class="center-column"
+            style="border-left: 1px solid gray;"
+          >
+            <p class="title has-text-white">
+              <span class="is-size-5">+</span>250<span class="is-size-5"
+                >mph</span
+              >
+            </p>
+            <p class="subtitle is-7 has-text-white">Top Speed</p>
           </div>
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-gray">
-                  <i class="fas fa-lg fa-cogs"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">...classes?</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Natus vitae nesciunt aliquam officiis nemo!
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div
+            id="d"
+            class="center-column"
+            style="border-left: 1px solid gray;"
+          >
+            <p class="title has-text-white">
+              620
+              <span class="is-size-5">mi</span>
+            </p>
+            <p class="subtitle is-7 has-text-white">Mile Range</p>
           </div>
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-primary">
-                  <i class="fas fa-lg fa-warehouse"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">Layout</h1>
-                  <p class="subtitle is-size-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Natus vitae nesciunt aliquam
-                    <strong>officiis</strong> nemo!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="column is-one-third">
-            <article class="media notification has-background-white">
-              <figure class="media-left">
-                <span class="icon has-text-danger">
-                  <i class="fas fa-lg fa-cube"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4">Elements</h1>
-                  <p class="subtitle is-size-5">
-                    In voluptate, ad excepturi adipisci tempora sapiente
-                    accusantium sunt quis amet, deleniti consequatur, laborum
-                    cumque illo.
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div id="e" class="center-column">
+            <a
+              class="button is-danger is-inverted is-rounded is-outlined has-text-white-bold"
+              style="width: 100%; border: 0.15rem solid white;"
+              >Reserve Now</a
+            >
           </div>
         </div>
-      </div>
+      </main>
     </section>
   </body>
 </html>
